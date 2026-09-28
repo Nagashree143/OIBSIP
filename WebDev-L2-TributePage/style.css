@@ -1,0 +1,215 @@
+/* =========================
+   General Settings
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+.header p {
+    font-size: 19px;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.kalam-image {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid #1f3c88;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* =========================
+   Biography
+========================= */
+
+.biography {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.biography h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.biography p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+/* =========================
+   Timeline
+========================= */
+
+.timeline {
+    background-color: #eaf0ff;
+    padding: 60px 20px;
+}
+
+.timeline h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 22px;
+    background-color: white;
+    border-left: 6px solid #1f3c88;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-item h3 {
+    color: #1f3c88;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Quote
+========================= */
+
+.quote {
+    background-color: #fff3d6;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.quote h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.quote blockquote {
+    max-width: 750px;
+    margin: auto;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.quote p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+
+/* =========================
+   Mobile Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .kalam-image {
+        width: 210px;
+        height: 260px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .biography {
+        padding: 40px 18px;
+    }
+
+    .biography h2,
+    .timeline h2,
+    .quote h2 {
+        font-size: 26px;
+    }
+
+    .biography p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .timeline-item {
+        margin: 15px 5px;
+    }
+
+    .quote blockquote {
+        font-size: 20px;
+    }
+}

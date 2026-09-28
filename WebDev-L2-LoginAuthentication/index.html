@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Authentication System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Registration Section -->
+        <div id="registerSection" class="form-box">
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">
+                Register to access your dashboard
+            </p>
+
+            <form id="registerForm">
+
+                <label for="registerName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="registerEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="registerPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <label for="confirmPassword">Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+            <p id="registerMessage" class="message"></p>
+
+            <p class="switch-text">
+                Already have an account?
+                <button type="button" id="showLogin">
+                    Login
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Login Section -->
+        <div id="loginSection" class="form-box hidden">
+
+            <h1>Welcome Back</h1>
+
+            <p class="subtitle">
+                Login to your account
+            </p>
+
+            <form id="loginForm">
+
+                <label for="loginEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <p id="loginMessage" class="message"></p>
+
+            <p class="switch-text">
+                Don't have an account?
+                <button type="button" id="showRegister">
+                    Register
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Dashboard -->
+        <div id="dashboardSection" class="dashboard hidden">
+
+            <h1>Dashboard</h1>
+
+            <p>
+                Welcome,
+                <strong id="userName"></strong>
+            </p>
+
+            <p id="userEmail"></p>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

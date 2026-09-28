@@ -1,0 +1,208 @@
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Form Box */
+
+.form-box,
+.dashboard {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+
+.form-box h1,
+.dashboard h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Subtitle */
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Main Buttons */
+
+form button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #667eea;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5568d9;
+}
+
+/* Messages */
+
+.message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+/* Switch Login/Register */
+
+.switch-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #666;
+}
+
+.switch-text button {
+    border: none;
+
+    background: none;
+
+    color: #667eea;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+/* Hide Sections */
+
+.hidden {
+    display: none;
+}
+
+/* Dashboard */
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard p {
+    margin-top: 15px;
+
+    color: #555;
+
+    font-size: 17px;
+}
+
+/* Logout Button */
+
+.logout-btn {
+    margin-top: 25px;
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .form-box,
+    .dashboard {
+        padding: 25px 20px;
+    }
+
+    .form-box h1,
+    .dashboard h1 {
+        font-size: 28px;
+    }
+}
